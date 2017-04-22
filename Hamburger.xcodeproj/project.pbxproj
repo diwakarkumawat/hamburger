@@ -21,6 +21,10 @@
 		A04DA1BB1EABE9B700331BF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1BA1EABE9B700331BF0 /* User.swift */; };
 		A04DA1BD1EABE9C100331BF0 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1BC1EABE9C100331BF0 /* Tweet.swift */; };
 		A04DA1BF1EABEC9D00331BF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1BE1EABEC9D00331BF0 /* LoginViewController.swift */; };
+		A04DA1C31EAC1A5400331BF0 /* favorite_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = A04DA1C01EAC1A5400331BF0 /* favorite_hover.png */; };
+		A04DA1C41EAC1A5400331BF0 /* reply_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = A04DA1C11EAC1A5400331BF0 /* reply_hover.png */; };
+		A04DA1C51EAC1A5400331BF0 /* retweet.png in Resources */ = {isa = PBXBuildFile; fileRef = A04DA1C21EAC1A5400331BF0 /* retweet.png */; };
+		A04DA1C91EAC1D4A00331BF0 /* TweetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1C81EAC1D4A00331BF0 /* TweetViewCell.swift */; };
 		A0DA239B1EAABEBA00177DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA239A1EAABEBA00177DBE /* AppDelegate.swift */; };
 		A0DA23A01EAABEBA00177DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DA239E1EAABEBA00177DBE /* Main.storyboard */; };
 		A0DA23A21EAABEBA00177DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DA23A11EAABEBA00177DBE /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 		A04DA1BA1EABE9B700331BF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A04DA1BC1EABE9C100331BF0 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		A04DA1BE1EABEC9D00331BF0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A04DA1C01EAC1A5400331BF0 /* favorite_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = favorite_hover.png; path = Assets.xcassets/favorite_hover.png; sourceTree = "<group>"; };
+		A04DA1C11EAC1A5400331BF0 /* reply_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reply_hover.png; path = Assets.xcassets/reply_hover.png; sourceTree = "<group>"; };
+		A04DA1C21EAC1A5400331BF0 /* retweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retweet.png; path = Assets.xcassets/retweet.png; sourceTree = "<group>"; };
+		A04DA1C81EAC1D4A00331BF0 /* TweetViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewCell.swift; sourceTree = "<group>"; };
 		A0DA23971EAABEBA00177DBE /* Hamburger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamburger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DA239A1EAABEBA00177DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DA239F1EAABEBA00177DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A00CF9DF1EAB1A2100C36A04 /* MenuCell.swift */,
+				A04DA1C81EAC1D4A00331BF0 /* TweetViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -85,6 +94,9 @@
 		A04DA1B51EABE93C00331BF0 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				A04DA1C01EAC1A5400331BF0 /* favorite_hover.png */,
+				A04DA1C11EAC1A5400331BF0 /* reply_hover.png */,
+				A04DA1C21EAC1A5400331BF0 /* retweet.png */,
 				A00CF9E11EAB2FCA00C36A04 /* Circled User Male-64.png */,
 				A00CF9E21EAB2FCA00C36A04 /* VIP-40.png */,
 				A00CF9E31EAB2FCA00C36A04 /* Timeline-48.png */,
@@ -229,10 +241,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04DA1C31EAC1A5400331BF0 /* favorite_hover.png in Resources */,
 				A0DA23A51EAABEBA00177DBE /* LaunchScreen.storyboard in Resources */,
 				A0DA23A21EAABEBA00177DBE /* Assets.xcassets in Resources */,
+				A04DA1C41EAC1A5400331BF0 /* reply_hover.png in Resources */,
 				A00CF9E71EAB2FCA00C36A04 /* Timeline-48.png in Resources */,
 				A00CF9E81EAB2FCA00C36A04 /* Circled User Male Filled-50.png in Resources */,
+				A04DA1C51EAC1A5400331BF0 /* retweet.png in Resources */,
 				A00CF9E61EAB2FCA00C36A04 /* VIP-40.png in Resources */,
 				A00CF9E51EAB2FCA00C36A04 /* Circled User Male-64.png in Resources */,
 				A0DA23A01EAABEBA00177DBE /* Main.storyboard in Resources */,
@@ -304,6 +319,7 @@
 				A0DA239B1EAABEBA00177DBE /* AppDelegate.swift in Sources */,
 				A00CF9DD1EAB0B9400C36A04 /* BlueViewController.swift in Sources */,
 				A00CF9DB1EAB0B8900C36A04 /* PinkViewController.swift in Sources */,
+				A04DA1C91EAC1D4A00331BF0 /* TweetViewCell.swift in Sources */,
 				A04DA1BF1EABEC9D00331BF0 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

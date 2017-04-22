@@ -8,18 +8,105 @@
 
 import UIKit
 
-class PinkViewController: UIViewController {
+class PinkViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TweetViewCellRetweetDelegate {
+    
+    var tweets: [Tweet]!
+    
+    var refreshControl: UIRefreshControl!
+    
 
+    @IBOutlet weak var tweetTableView: UITableView!
+    
+    
+    @IBAction func onLogout(_ sender: Any) {
+        TwitterClient.sharedInstance?.logout()
+    }
+    
+    @IBAction func retweet(tweetViewCell: TweetViewCell) {
+        print("TweetsViewController -> retweet")
+        TwitterClient.sharedInstance?.retweet(id: tweetViewCell.tweet!.id!)
+    }
+    
+    
+    @IBAction func onNewTweet(_ sender: Any) {
+        print("New Tweet")
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "NewTweetViewController")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tweetTableView.dataSource = self
+        tweetTableView.delegate = self
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "onRefresh", for: UIControlEvents.valueChanged)
+        tweetTableView.insertSubview(refreshControl, at: 0)
+    
+        // various timelines
+        //TwitterClient.sharedInstance?.profileTimeline(success: { (tweets: [Tweet]) in
+        //TwitterClient.sharedInstance?.mentionsTimeline(success: { (tweets: [Tweet]) in
+        TwitterClient.sharedInstance?.homeTimeline(success: { (tweets: [Tweet]) in
+        for tweet in tweets {
+            //print(tweet.text!)
+        }
+        self.tweets = tweets
+        self.tweetTableView.reloadData()
+        }, failure: { (error: Error) in
+            print(error)
+        })
     }
-
+    
+    func onRefresh() {
+        TwitterClient.sharedInstance?.homeTimeline(success: { (tweets: [Tweet]) in
+    
+            for tweet in tweets {
+                print(tweet.text!)
+            }
+            self.tweets = tweets
+            self.tweetTableView.reloadData()
+        }, failure: { (error: Error) in
+            print(error)
+        })
+        self.refreshControl.endRefreshing()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("number of rows")
+        if let tweets = tweets {
+            return tweets.count
+        } else {
+        return 0
+        }
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tweetTableView.dequeueReusableCell(withIdentifier: "TweetViewCell", for: indexPath) as! TweetViewCell
+    
+        cell.retweetDelegate = self
+    
+        let tweet = tweets![indexPath.row] as Tweet
+    
+        let user = tweet.user! as User
+        cell.tweet = tweet
+    
+        cell.post.text = (tweet.text! as NSString) as String
+        cell.name.text = (user.name! as NSString) as String
+        cell.handle.text = "@" + ((user.screenName!) as String) as String
+        cell.profileImageView.setImageWith((user.profileImageUrl as? URL)!)
+    
+        print("row \(indexPath.row)")
+        return cell
+    }
+    
+    
     
 
     /*
