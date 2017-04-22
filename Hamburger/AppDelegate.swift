@@ -16,13 +16,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        let hamburgerViewController = window!.rootViewController as! HamburgerViewController
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        print("AppDelegate.application()")
+        
+        //let hamburgerViewController = window!.rootViewController as! HamburgerViewController
+        let hamburgerViewController = storyboard.instantiateViewController(withIdentifier: "HamburgerViewController") as! HamburgerViewController
+        
         let menuViewController = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
 
         menuViewController.hamburgerViewController = hamburgerViewController
         hamburgerViewController.menuViewController = menuViewController
+        
+        if User.currentUser != nil {
+            // go to tweets directly
+            print("User already logged in")
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //let vc = storyboard.instantiateViewController(withIdentifier: "MenuViewController")
+            //window?.rootViewController = vc
+            window?.rootViewController = hamburgerViewController
+        } else {
+            print("No User LoggedIn")
+        }
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: TwitterClient.USER_LOGOUT), object: nil, queue: OperationQueue.main) { (notification: Notification) in
+            print("Log Out")
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            self.window?.rootViewController = vc
+        }
+        
         return true
     }
 
@@ -48,6 +71,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        print(url.description)
+        
+        TwitterClient.sharedInstance?.handleOpenUrl(url: url as NSURL)
+        
+        return true
+    }
+    
 
 }
 

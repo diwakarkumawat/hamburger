@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EA6FA5E8C8DEE5884AA716B /* Pods_Hamburger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB2EEC8669B271624496AC7 /* Pods_Hamburger.framework */; };
 		A00CF9D71EAB0B6E00C36A04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CF9D61EAB0B6E00C36A04 /* MenuViewController.swift */; };
 		A00CF9D91EAB0B7C00C36A04 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CF9D81EAB0B7C00C36A04 /* GreenViewController.swift */; };
 		A00CF9DB1EAB0B8900C36A04 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CF9DA1EAB0B8900C36A04 /* PinkViewController.swift */; };
@@ -16,6 +17,10 @@
 		A00CF9E61EAB2FCA00C36A04 /* VIP-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A00CF9E21EAB2FCA00C36A04 /* VIP-40.png */; };
 		A00CF9E71EAB2FCA00C36A04 /* Timeline-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A00CF9E31EAB2FCA00C36A04 /* Timeline-48.png */; };
 		A00CF9E81EAB2FCA00C36A04 /* Circled User Male Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A00CF9E41EAB2FCA00C36A04 /* Circled User Male Filled-50.png */; };
+		A04DA1B91EABE97F00331BF0 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1B81EABE97F00331BF0 /* TwitterClient.swift */; };
+		A04DA1BB1EABE9B700331BF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1BA1EABE9B700331BF0 /* User.swift */; };
+		A04DA1BD1EABE9C100331BF0 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1BC1EABE9C100331BF0 /* Tweet.swift */; };
+		A04DA1BF1EABEC9D00331BF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1BE1EABEC9D00331BF0 /* LoginViewController.swift */; };
 		A0DA239B1EAABEBA00177DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA239A1EAABEBA00177DBE /* AppDelegate.swift */; };
 		A0DA23A01EAABEBA00177DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DA239E1EAABEBA00177DBE /* Main.storyboard */; };
 		A0DA23A21EAABEBA00177DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DA23A11EAABEBA00177DBE /* Assets.xcassets */; };
@@ -24,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		254C8F5EF027D64FA56B269E /* Pods-Hamburger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hamburger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hamburger/Pods-Hamburger.release.xcconfig"; sourceTree = "<group>"; };
+		8FB2EEC8669B271624496AC7 /* Pods_Hamburger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hamburger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00CF9D61EAB0B6E00C36A04 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A00CF9D81EAB0B7C00C36A04 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		A00CF9DA1EAB0B8900C36A04 /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +40,10 @@
 		A00CF9E21EAB2FCA00C36A04 /* VIP-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VIP-40.png"; path = "Assets.xcassets/VIP-40.png"; sourceTree = "<group>"; };
 		A00CF9E31EAB2FCA00C36A04 /* Timeline-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Timeline-48.png"; path = "Assets.xcassets/Timeline-48.png"; sourceTree = "<group>"; };
 		A00CF9E41EAB2FCA00C36A04 /* Circled User Male Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Circled User Male Filled-50.png"; path = "Assets.xcassets/Circled User Male Filled-50.png"; sourceTree = "<group>"; };
+		A04DA1B81EABE97F00331BF0 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		A04DA1BA1EABE9B700331BF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A04DA1BC1EABE9C100331BF0 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		A04DA1BE1EABEC9D00331BF0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A0DA23971EAABEBA00177DBE /* Hamburger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamburger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DA239A1EAABEBA00177DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DA239F1EAABEBA00177DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +51,7 @@
 		A0DA23A41EAABEBA00177DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0DA23A61EAABEBA00177DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0DA23AD1EAABF7900177DBE /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		FFF375061796FD2C26DA9A4E /* Pods-Hamburger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hamburger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hamburger/Pods-Hamburger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +59,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA6FA5E8C8DEE5884AA716B /* Pods_Hamburger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F536D9B3AF7B940207C36AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FB2EEC8669B271624496AC7 /* Pods_Hamburger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A00CF9DE1EAB19F400C36A04 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +82,41 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		A04DA1B51EABE93C00331BF0 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A00CF9E11EAB2FCA00C36A04 /* Circled User Male-64.png */,
+				A00CF9E21EAB2FCA00C36A04 /* VIP-40.png */,
+				A00CF9E31EAB2FCA00C36A04 /* Timeline-48.png */,
+				A00CF9E41EAB2FCA00C36A04 /* Circled User Male Filled-50.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		A04DA1B61EABE94E00331BF0 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				A04DA1B81EABE97F00331BF0 /* TwitterClient.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		A04DA1B71EABE95400331BF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A04DA1BA1EABE9B700331BF0 /* User.swift */,
+				A04DA1BC1EABE9C100331BF0 /* Tweet.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A0DA238E1EAABEBA00177DBE = {
 			isa = PBXGroup;
 			children = (
 				A0DA23991EAABEBA00177DBE /* Hamburger */,
 				A0DA23981EAABEBA00177DBE /* Products */,
+				B5DA45325A71ED6FA9307ED2 /* Pods */,
+				6F536D9B3AF7B940207C36AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,15 +131,14 @@
 		A0DA23991EAABEBA00177DBE /* Hamburger */ = {
 			isa = PBXGroup;
 			children = (
+				A04DA1B71EABE95400331BF0 /* Model */,
+				A04DA1B61EABE94E00331BF0 /* Client */,
+				A04DA1B51EABE93C00331BF0 /* resources */,
 				A00CF9DE1EAB19F400C36A04 /* View */,
 				A0DA23AC1EAABF6800177DBE /* View Controller */,
 				A0DA239A1EAABEBA00177DBE /* AppDelegate.swift */,
 				A0DA239E1EAABEBA00177DBE /* Main.storyboard */,
 				A0DA23A11EAABEBA00177DBE /* Assets.xcassets */,
-				A00CF9E11EAB2FCA00C36A04 /* Circled User Male-64.png */,
-				A00CF9E21EAB2FCA00C36A04 /* VIP-40.png */,
-				A00CF9E31EAB2FCA00C36A04 /* Timeline-48.png */,
-				A00CF9E41EAB2FCA00C36A04 /* Circled User Male Filled-50.png */,
 				A0DA23A31EAABEBA00177DBE /* LaunchScreen.storyboard */,
 				A0DA23A61EAABEBA00177DBE /* Info.plist */,
 			);
@@ -103,8 +153,18 @@
 				A00CF9D81EAB0B7C00C36A04 /* GreenViewController.swift */,
 				A00CF9DA1EAB0B8900C36A04 /* PinkViewController.swift */,
 				A00CF9DC1EAB0B9400C36A04 /* BlueViewController.swift */,
+				A04DA1BE1EABEC9D00331BF0 /* LoginViewController.swift */,
 			);
 			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		B5DA45325A71ED6FA9307ED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFF375061796FD2C26DA9A4E /* Pods-Hamburger.debug.xcconfig */,
+				254C8F5EF027D64FA56B269E /* Pods-Hamburger.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0DA23A91EAABEBA00177DBE /* Build configuration list for PBXNativeTarget "Hamburger" */;
 			buildPhases = (
+				130D1F9E3060BE792FC63524 /* [CP] Check Pods Manifest.lock */,
 				A0DA23931EAABEBA00177DBE /* Sources */,
 				A0DA23941EAABEBA00177DBE /* Frameworks */,
 				A0DA23951EAABEBA00177DBE /* Resources */,
+				7CC347468420EF936064E5D0 /* [CP] Embed Pods Frameworks */,
+				9F69A3C3A768861A9F031B82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,18 +241,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		130D1F9E3060BE792FC63524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CC347468420EF936064E5D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hamburger/Pods-Hamburger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F69A3C3A768861A9F031B82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hamburger/Pods-Hamburger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0DA23931EAABEBA00177DBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04DA1B91EABE97F00331BF0 /* TwitterClient.swift in Sources */,
+				A04DA1BD1EABE9C100331BF0 /* Tweet.swift in Sources */,
 				A00CF9E01EAB1A2100C36A04 /* MenuCell.swift in Sources */,
 				A00CF9D91EAB0B7C00C36A04 /* GreenViewController.swift in Sources */,
 				A0DA23AE1EAABF7900177DBE /* HamburgerViewController.swift in Sources */,
 				A00CF9D71EAB0B6E00C36A04 /* MenuViewController.swift in Sources */,
+				A04DA1BB1EABE9B700331BF0 /* User.swift in Sources */,
 				A0DA239B1EAABEBA00177DBE /* AppDelegate.swift in Sources */,
 				A00CF9DD1EAB0B9400C36A04 /* BlueViewController.swift in Sources */,
 				A00CF9DB1EAB0B8900C36A04 /* PinkViewController.swift in Sources */,
+				A04DA1BF1EABEC9D00331BF0 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +423,7 @@
 		};
 		A0DA23AA1EAABEBA00177DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF375061796FD2C26DA9A4E /* Pods-Hamburger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hamburger/Info.plist;
@@ -320,6 +436,7 @@
 		};
 		A0DA23AB1EAABEBA00177DBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 254C8F5EF027D64FA56B269E /* Pods-Hamburger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hamburger/Info.plist;
