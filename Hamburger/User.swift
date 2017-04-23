@@ -18,7 +18,7 @@ class User: NSObject {
     var userDict: NSDictionary
     var followers: Int?
     var friendsCount: Int?
-    var profileBGImageUrl: NSURL?
+    var profileBGImageUrl: NSString?
     var retweetCount: Int?
     
     init(dict: NSDictionary) {
@@ -45,7 +45,8 @@ class User: NSObject {
         
         var profileBGImageUrlStr = dict["profile_background_image_url"] as? NSString
         if let _profileBGImageUrlStr = profileBGImageUrlStr {
-            profileBGImageUrl = URL(string: _profileBGImageUrlStr as String) as NSURL?
+            //profileBGImageUrl = URL(string: _profileBGImageUrlStr as String) as NSURL?
+            profileBGImageUrl = _profileBGImageUrlStr
         }
         
     }

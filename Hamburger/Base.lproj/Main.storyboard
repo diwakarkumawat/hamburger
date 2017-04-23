@@ -220,7 +220,7 @@
                         <outlet property="following" destination="Lq3-Oq-jTE" id="BZx-NP-0hS"/>
                         <outlet property="handle" destination="ezL-5X-9P7" id="dD9-k7-ngB"/>
                         <outlet property="name" destination="f0Y-ma-qy7" id="OHp-I1-wqZ"/>
-                        <outlet property="userImageView" destination="fQF-eN-W0g" id="GGu-C6-N8u"/>
+                        <outlet property="userImageView" destination="fQF-eN-W0g" id="wBS-NW-FQn"/>
                         <outlet property="userTableView" destination="IuL-im-fhE" id="5Qc-Gf-l91"/>
                     </connections>
                 </viewController>

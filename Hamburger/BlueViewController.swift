@@ -34,16 +34,20 @@ class BlueViewController: UIViewController, UITableViewDelegate, UITableViewData
         refreshControl.addTarget(self, action: "onRefresh", for: UIControlEvents.valueChanged)
         userTableView.insertSubview(refreshControl, at: 0)
         
+        //let currentUser = User.currentUser!
+        let currentUser = User._currentUser!
+        print(currentUser.name!)
+        print(currentUser.screenName!)
+        print(currentUser.profileImageUrl!)
+        print(currentUser.profileBGImageUrl!)
+        
         // profile details
+        userImageView.setImageWith((User._currentUser?.profileImageUrl as? URL)!)
+        name.text = User._currentUser?.name as String?
+        handle.text = User._currentUser?.screenName as String?
         
-        /*
-        userImageView.setImageWith((User.currentUser?.profileImageUrl as? URL)!)
-        name.text = User.currentUser?.name as String?
-        handle.text = User.currentUser?.screenName as String?
-        
-        following.text = "\(User.currentUser?.friendsCount) +  FOLLOWING"
-        followers.text = "\(User.currentUser?.followers) +  FOLLOWERS"
-    */
+        following.text = "\(User._currentUser!.friendsCount!) FOLLOWING"
+        followers.text = "\(User._currentUser!.followers!) FOLLOWERS"
 
         // various timelines
         TwitterClient.sharedInstance?.profileTimeline(success: { (tweets: [Tweet]) in
