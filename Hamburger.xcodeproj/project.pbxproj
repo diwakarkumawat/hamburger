@@ -25,6 +25,7 @@
 		A04DA1C41EAC1A5400331BF0 /* reply_hover.png in Resources */ = {isa = PBXBuildFile; fileRef = A04DA1C11EAC1A5400331BF0 /* reply_hover.png */; };
 		A04DA1C51EAC1A5400331BF0 /* retweet.png in Resources */ = {isa = PBXBuildFile; fileRef = A04DA1C21EAC1A5400331BF0 /* retweet.png */; };
 		A04DA1C91EAC1D4A00331BF0 /* TweetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1C81EAC1D4A00331BF0 /* TweetViewCell.swift */; };
+		A04DA1CB1EAC290200331BF0 /* ProfileTweetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1CA1EAC290200331BF0 /* ProfileTweetViewCell.swift */; };
 		A0DA239B1EAABEBA00177DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA239A1EAABEBA00177DBE /* AppDelegate.swift */; };
 		A0DA23A01EAABEBA00177DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0DA239E1EAABEBA00177DBE /* Main.storyboard */; };
 		A0DA23A21EAABEBA00177DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0DA23A11EAABEBA00177DBE /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		A04DA1C11EAC1A5400331BF0 /* reply_hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reply_hover.png; path = Assets.xcassets/reply_hover.png; sourceTree = "<group>"; };
 		A04DA1C21EAC1A5400331BF0 /* retweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retweet.png; path = Assets.xcassets/retweet.png; sourceTree = "<group>"; };
 		A04DA1C81EAC1D4A00331BF0 /* TweetViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewCell.swift; sourceTree = "<group>"; };
+		A04DA1CA1EAC290200331BF0 /* ProfileTweetViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTweetViewCell.swift; sourceTree = "<group>"; };
 		A0DA23971EAABEBA00177DBE /* Hamburger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hamburger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DA239A1EAABEBA00177DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0DA239F1EAABEBA00177DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				A00CF9DF1EAB1A2100C36A04 /* MenuCell.swift */,
 				A04DA1C81EAC1D4A00331BF0 /* TweetViewCell.swift */,
+				A04DA1CA1EAC290200331BF0 /* ProfileTweetViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04DA1B91EABE97F00331BF0 /* TwitterClient.swift in Sources */,
+				A04DA1CB1EAC290200331BF0 /* ProfileTweetViewCell.swift in Sources */,
 				A04DA1BD1EABE9C100331BF0 /* Tweet.swift in Sources */,
 				A00CF9E01EAB1A2100C36A04 /* MenuCell.swift in Sources */,
 				A00CF9D91EAB0B7C00C36A04 /* GreenViewController.swift in Sources */,

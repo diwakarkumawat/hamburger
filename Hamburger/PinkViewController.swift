@@ -18,6 +18,8 @@ class PinkViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tweetTableView: UITableView!
     
     
+    
+    
     @IBAction func onLogout(_ sender: Any) {
         TwitterClient.sharedInstance?.logout()
     }
