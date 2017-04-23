@@ -21,6 +21,7 @@ class BlueViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var handle: UILabel!
     @IBOutlet weak var following: UILabel!
     @IBOutlet weak var followers: UILabel!
+    @IBOutlet weak var retweets: UILabel!
     
     @IBOutlet weak var userImageView: UIImageView!
 
@@ -48,6 +49,7 @@ class BlueViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         following.text = "\(User._currentUser!.friendsCount!) FOLLOWING"
         followers.text = "\(User._currentUser!.followers!) FOLLOWERS"
+        retweets.text = "\(User._currentUser!.retweetCount!) RETWEETS"
 
         // various timelines
         TwitterClient.sharedInstance?.profileTimeline(success: { (tweets: [Tweet]) in
@@ -109,6 +111,7 @@ class BlueViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.profileName.text = (user.name! as NSString) as String
         cell.profileHandle.text = "@" + ((user.screenName!) as String) as String
         cell.profileTweetImageView.setImageWith((user.profileImageUrl as? URL)!)
+        cell.retweetCount.text = String(tweet.retweetCount)
         
         print("row \(indexPath.row)")
         return cell

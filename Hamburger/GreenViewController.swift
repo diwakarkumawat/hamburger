@@ -80,6 +80,7 @@ class GreenViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.mentionsName.text = (user.name! as NSString) as String
         cell.mentionsHandle.text = "@" + ((user.screenName!) as String) as String
         cell.mentionsImageView.setImageWith((user.profileImageUrl as? URL)!)
+        cell.retweetCount.text = String(tweet.retweetCount)
         
         print("row \(indexPath.row)")
         return cell

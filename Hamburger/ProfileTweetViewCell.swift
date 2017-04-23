@@ -18,6 +18,9 @@ class ProfileTweetViewCell: UITableViewCell {
     @IBOutlet weak var profileHandle: UILabel!
     @IBOutlet weak var profileName: UILabel!
 
+    @IBOutlet weak var retweetCount: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         profileTweetImageView.layer.cornerRadius = 4

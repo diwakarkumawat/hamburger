@@ -16,6 +16,7 @@ class MentionsTweetViewCell: UITableViewCell {
     @IBOutlet weak var mentionsImageView: UIImageView!
     @IBOutlet weak var mentionsPost: UILabel!
     @IBOutlet weak var mentionsName: UILabel!
+    @IBOutlet weak var retweetCount: UILabel!
     
         override func awakeFromNib() {
             super.awakeFromNib()
