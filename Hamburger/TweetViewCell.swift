@@ -16,6 +16,8 @@ class TweetViewCell: UITableViewCell {
     
     var tweet: Tweet!
     
+    @IBOutlet weak var retweetCount: UILabel!
+    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var handle: UILabel!
     @IBOutlet weak var post: UILabel!

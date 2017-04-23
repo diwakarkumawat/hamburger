@@ -103,6 +103,7 @@ class PinkViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.name.text = (user.name! as NSString) as String
         cell.handle.text = "@" + ((user.screenName!) as String) as String
         cell.profileImageView.setImageWith((user.profileImageUrl as? URL)!)
+        cell.retweetCount.text = String(tweet.retweetCount)
     
         print("row \(indexPath.row)")
         return cell
