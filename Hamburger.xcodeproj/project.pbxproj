@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5EA6FA5E8C8DEE5884AA716B /* Pods_Hamburger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB2EEC8669B271624496AC7 /* Pods_Hamburger.framework */; };
+		A00AC3F81EADD8C700D736EC /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00AC3F71EADD8C700D736EC /* UserTableViewCell.swift */; };
 		A00CF9D71EAB0B6E00C36A04 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CF9D61EAB0B6E00C36A04 /* MenuViewController.swift */; };
 		A00CF9D91EAB0B7C00C36A04 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CF9D81EAB0B7C00C36A04 /* GreenViewController.swift */; };
 		A00CF9DB1EAB0B8900C36A04 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00CF9DA1EAB0B8900C36A04 /* PinkViewController.swift */; };
@@ -17,6 +18,9 @@
 		A00CF9E61EAB2FCA00C36A04 /* VIP-40.png in Resources */ = {isa = PBXBuildFile; fileRef = A00CF9E21EAB2FCA00C36A04 /* VIP-40.png */; };
 		A00CF9E71EAB2FCA00C36A04 /* Timeline-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A00CF9E31EAB2FCA00C36A04 /* Timeline-48.png */; };
 		A00CF9E81EAB2FCA00C36A04 /* Circled User Male Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A00CF9E41EAB2FCA00C36A04 /* Circled User Male Filled-50.png */; };
+		A00DBD261EADCF47005C5DC7 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = A00DBD251EADCF47005C5DC7 /* logout.png */; };
+		A00DBD281EADD02A005C5DC7 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DBD271EADD02A005C5DC7 /* LogoutViewController.swift */; };
+		A00DBD2A1EADD611005C5DC7 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00DBD291EADD611005C5DC7 /* UserViewController.swift */; };
 		A01AE7131EAC6B8900C86F23 /* MentionsTweetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01AE7121EAC6B8900C86F23 /* MentionsTweetViewCell.swift */; };
 		A04DA1B91EABE97F00331BF0 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1B81EABE97F00331BF0 /* TwitterClient.swift */; };
 		A04DA1BB1EABE9B700331BF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04DA1BA1EABE9B700331BF0 /* User.swift */; };
@@ -37,6 +41,7 @@
 /* Begin PBXFileReference section */
 		254C8F5EF027D64FA56B269E /* Pods-Hamburger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hamburger.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hamburger/Pods-Hamburger.release.xcconfig"; sourceTree = "<group>"; };
 		8FB2EEC8669B271624496AC7 /* Pods_Hamburger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hamburger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00AC3F71EADD8C700D736EC /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		A00CF9D61EAB0B6E00C36A04 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A00CF9D81EAB0B7C00C36A04 /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		A00CF9DA1EAB0B8900C36A04 /* PinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +51,9 @@
 		A00CF9E21EAB2FCA00C36A04 /* VIP-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VIP-40.png"; path = "Assets.xcassets/VIP-40.png"; sourceTree = "<group>"; };
 		A00CF9E31EAB2FCA00C36A04 /* Timeline-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Timeline-48.png"; path = "Assets.xcassets/Timeline-48.png"; sourceTree = "<group>"; };
 		A00CF9E41EAB2FCA00C36A04 /* Circled User Male Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Circled User Male Filled-50.png"; path = "Assets.xcassets/Circled User Male Filled-50.png"; sourceTree = "<group>"; };
+		A00DBD251EADCF47005C5DC7 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = Assets.xcassets/logout.png; sourceTree = "<group>"; };
+		A00DBD271EADD02A005C5DC7 /* LogoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		A00DBD291EADD611005C5DC7 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		A01AE7121EAC6B8900C86F23 /* MentionsTweetViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsTweetViewCell.swift; sourceTree = "<group>"; };
 		A04DA1B81EABE97F00331BF0 /* TwitterClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
 		A04DA1BA1EABE9B700331BF0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 				A04DA1C81EAC1D4A00331BF0 /* TweetViewCell.swift */,
 				A04DA1CA1EAC290200331BF0 /* ProfileTweetViewCell.swift */,
 				A01AE7121EAC6B8900C86F23 /* MentionsTweetViewCell.swift */,
+				A00AC3F71EADD8C700D736EC /* UserTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 		A04DA1B51EABE93C00331BF0 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				A00DBD251EADCF47005C5DC7 /* logout.png */,
 				A04DA1C01EAC1A5400331BF0 /* favorite_hover.png */,
 				A04DA1C11EAC1A5400331BF0 /* reply_hover.png */,
 				A04DA1C21EAC1A5400331BF0 /* retweet.png */,
@@ -172,6 +182,8 @@
 				A00CF9DA1EAB0B8900C36A04 /* PinkViewController.swift */,
 				A00CF9DC1EAB0B9400C36A04 /* BlueViewController.swift */,
 				A04DA1BE1EABEC9D00331BF0 /* LoginViewController.swift */,
+				A00DBD271EADD02A005C5DC7 /* LogoutViewController.swift */,
+				A00DBD291EADD611005C5DC7 /* UserViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -254,6 +266,7 @@
 				A00CF9E71EAB2FCA00C36A04 /* Timeline-48.png in Resources */,
 				A00CF9E81EAB2FCA00C36A04 /* Circled User Male Filled-50.png in Resources */,
 				A04DA1C51EAC1A5400331BF0 /* retweet.png in Resources */,
+				A00DBD261EADCF47005C5DC7 /* logout.png in Resources */,
 				A00CF9E61EAB2FCA00C36A04 /* VIP-40.png in Resources */,
 				A00CF9E51EAB2FCA00C36A04 /* Circled User Male-64.png in Resources */,
 				A0DA23A01EAABEBA00177DBE /* Main.storyboard in Resources */,
@@ -316,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04DA1B91EABE97F00331BF0 /* TwitterClient.swift in Sources */,
+				A00DBD2A1EADD611005C5DC7 /* UserViewController.swift in Sources */,
 				A04DA1CB1EAC290200331BF0 /* ProfileTweetViewCell.swift in Sources */,
 				A04DA1BD1EABE9C100331BF0 /* Tweet.swift in Sources */,
 				A00CF9E01EAB1A2100C36A04 /* MenuCell.swift in Sources */,
@@ -328,6 +342,8 @@
 				A00CF9DD1EAB0B9400C36A04 /* BlueViewController.swift in Sources */,
 				A00CF9DB1EAB0B8900C36A04 /* PinkViewController.swift in Sources */,
 				A04DA1C91EAC1D4A00331BF0 /* TweetViewCell.swift in Sources */,
+				A00DBD281EADD02A005C5DC7 /* LogoutViewController.swift in Sources */,
+				A00AC3F81EADD8C700D736EC /* UserTableViewCell.swift in Sources */,
 				A04DA1BF1EABEC9D00331BF0 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

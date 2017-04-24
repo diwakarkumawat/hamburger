@@ -32,9 +32,11 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         pinkNavController = storyboard.instantiateViewController(withIdentifier: "pinkNavController")
         blueNavController = storyboard.instantiateViewController(withIdentifier: "blueNavController")
         
+        
         viewControllers.append(greenNavController)
         viewControllers.append(pinkNavController)
         viewControllers.append(blueNavController)
+        
         
         // ui images
         images.append(UIImage(named: "Circled User Male-64.png")!)
@@ -72,11 +74,9 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         hamburgerViewController.contentViewController = viewControllers[indexPath.row]
     }
     
-
     /*
     // MARK: - Navigation
 

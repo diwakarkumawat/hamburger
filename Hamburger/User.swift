@@ -10,6 +10,7 @@ import UIKit
 
 class User: NSObject {
     
+    var id: String!
     var name: NSString?
     var screenName: NSString?
     var profileImageUrl: NSURL?
@@ -25,6 +26,7 @@ class User: NSObject {
     init(dict: NSDictionary) {
         self.userDict = dict
         print(dict)
+        id = dict["id_str"] as? String
         name = dict["name"] as? String as NSString?
         screenName = dict["screen_name"] as? NSString
         tagline = dict["description"] as? NSString

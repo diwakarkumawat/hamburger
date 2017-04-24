@@ -242,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2zw-ie-WeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48.799999999999997" y="1826.5367316341831"/>
+            <point key="canvasLocation" x="988" y="1826.5367316341831"/>
         </scene>
         <!--Profile-->
         <scene sceneID="fbr-he-F6I">
@@ -260,11 +260,11 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetViewCell" rowHeight="136" id="vGH-PM-BHy" customClass="TweetViewCell" customModule="Hamburger" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TweetViewCell" rowHeight="136" id="vGH-PM-BHy" customClass="TweetViewCell" customModule="Hamburger" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vGH-PM-BHy" id="WZ4-d1-ZEE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diwakar Kumawat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhl-Hw-008">
@@ -325,6 +325,7 @@
                                             <outlet property="post" destination="6j9-nD-zkQ" id="nq5-vm-ORV"/>
                                             <outlet property="profileImageView" destination="c2B-Le-qPF" id="PzU-nE-MQn"/>
                                             <outlet property="retweetCount" destination="nsG-qu-7o9" id="Qci-4W-Hvq"/>
+                                            <segue destination="wWr-eP-mtx" kind="push" id="FaQ-2L-eNH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -340,14 +341,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="icv-za-JxH">
                         <barButtonItem key="backBarButtonItem" title="Back" id="fke-Y2-yXq"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="Zsq-dd-dWB">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9ux-wh-N9H">
-                                <rect key="frame" x="16" y="7" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Logout"/>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="sXv-7E-bwH">
                             <connections>
-                                <action selector="onLogout:" destination="5Ys-3C-FJ2" id="1FF-Nk-vGU"/>
+                                <action selector="onLogoutTap:" destination="5Ys-3C-FJ2" id="ggl-uM-4QU"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New" style="plain" id="oOX-sL-ice" userLabel="New">
@@ -367,7 +363,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aK-vI-8nk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.79999999999995" y="1826.5367316341831"/>
+            <point key="canvasLocation" x="1884" y="1826.5367316341831"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="0lj-XM-HdK">
+            <objects>
+                <viewController storyboardIdentifier="UserViewController" id="wWr-eP-mtx" customClass="UserViewController" customModule="Hamburger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N32-lO-Eon"/>
+                        <viewControllerLayoutGuide type="bottom" id="zvL-Ss-UA3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4kI-Cx-NSR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9rn-VK-KSo">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserTableViewCell" rowHeight="104" id="tIQ-2w-rNS" customClass="UserTableViewCell" customModule="Hamburger" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="104"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tIQ-2w-rNS" id="kEm-pq-L5L">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1NX-6Q-ZhW">
+                                                    <rect key="frame" x="20" y="11" width="89" height="68"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shrisha radha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDC-Ob-3mO">
+                                                    <rect key="frame" x="124" y="11" width="104" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@shrisha handle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyN-Nn-NHU">
+                                                    <rect key="frame" x="124" y="25" width="127" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="shrisha posts about tech" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mB-Kz-mIy">
+                                                    <rect key="frame" x="124" y="45" width="160" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userHandle" destination="UyN-Nn-NHU" id="UjP-Dd-4Ub"/>
+                                            <outlet property="userName" destination="tDC-Ob-3mO" id="TSl-NO-359"/>
+                                            <outlet property="userPost" destination="2mB-Kz-mIy" id="cba-CP-lbq"/>
+                                            <outlet property="userProfileImage" destination="1NX-6Q-ZhW" id="d9s-P1-yZ1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mYI-3Y-5SH"/>
+                    <connections>
+                        <outlet property="userTableView" destination="9rn-VK-KSo" id="Yfe-8w-Pm9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vr-EH-jxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2128.8000000000002" y="2532.6836581709149"/>
         </scene>
         <!--Green View Controller-->
         <scene sceneID="PDH-9f-0aR">
@@ -467,7 +535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T0w-Za-HUB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904.8" y="1826.5367316341831"/>
+            <point key="canvasLocation" x="2844" y="1826.5367316341831"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Ptk-XQ-YEN">
@@ -563,7 +631,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kQ7-lK-Fqo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="976"/>
+            <point key="canvasLocation" x="988" y="975.56221889055485"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="40B-Vg-aIA">
@@ -581,7 +649,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YC1-ZW-lBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="976"/>
+            <point key="canvasLocation" x="1884" y="975.56221889055485"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G3U-u6-tZF">
@@ -599,7 +667,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YlU-ER-ydL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905" y="976"/>
+            <point key="canvasLocation" x="2844" y="975.56221889055485"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fwM-CS-GBR">

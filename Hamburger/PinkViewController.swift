@@ -17,10 +17,8 @@ class PinkViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBOutlet weak var tweetTableView: UITableView!
     
-    
-    
-    
-    @IBAction func onLogout(_ sender: Any) {
+    @IBAction func onLogoutTap(_ sender: Any) {
+        print("onLogout")
         TwitterClient.sharedInstance?.logout()
     }
     
@@ -112,14 +110,23 @@ class PinkViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let cell = sender as! TweetViewCell
+        let indexPath = tweetTableView.indexPath(for: cell)
+        let tweet = tweets![(indexPath?.row)!]
+        
+        let newUser = tweet.user!
+        print(newUser.name!)
+        print(newUser.id!)
+
+        let userViewController = segue.destination as! UserViewController
+        userViewController.userId = newUser.id!
+        
     }
-    */
 
 }
