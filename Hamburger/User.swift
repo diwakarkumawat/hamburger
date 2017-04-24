@@ -14,6 +14,7 @@ class User: NSObject {
     var screenName: NSString?
     var profileImageUrl: NSURL?
     var profileUrl: NSURL?
+    var profileImageStr: NSString?
     var tagline: NSString?
     var userDict: NSDictionary
     var followers: Int?
@@ -32,6 +33,7 @@ class User: NSObject {
         
         if let _profileUrlString = profileImageUrlStr {
             profileImageUrl = URL(string: _profileUrlString as String) as NSURL?
+            profileImageUrlStr = _profileUrlString
         }
         
         if let _profileUrlStr = profileUrlStr {

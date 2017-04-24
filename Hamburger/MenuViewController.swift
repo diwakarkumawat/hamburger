@@ -54,8 +54,14 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let titles = ["Profile", "Timeline", "Mentions"]
         print(indexPath.row)
-        cell.menuLabel.text = titles[indexPath.row]
-        cell.menuImage.image = images[indexPath.row]
+        
+        if indexPath.row == 0 {
+            cell.menuLabel.text = User._currentUser?.name! as String?
+            cell.menuImage.setImageWith((User._currentUser?.profileImageUrl as? URL)!)
+        } else {
+            cell.menuLabel.text = titles[indexPath.row]
+            cell.menuImage.image = images[indexPath.row]
+        }
         return cell
     }
 

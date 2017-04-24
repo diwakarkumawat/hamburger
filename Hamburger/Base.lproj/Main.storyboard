@@ -42,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdh-Pg-8ko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="-320"/>
+            <point key="canvasLocation" x="-812" y="272"/>
         </scene>
         <!--Hamburger View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -164,7 +164,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G5Q-cj-kfe" id="BVd-lM-07o">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Knh-Nv-beH">
@@ -264,7 +264,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vGH-PM-BHy" id="WZ4-d1-ZEE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diwakar Kumawat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhl-Hw-008">
@@ -389,7 +389,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dtF-ze-tHn" id="lzM-aG-vfS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="147.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tn5-1m-62s">
@@ -488,12 +488,12 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="252" id="dYO-Ca-v1h" customClass="MenuCell" customModule="Hamburger" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="252"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dYO-Ca-v1h" id="mJT-n2-dxN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="251"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="dYO-Ca-v1h" id="mJT-n2-dxN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="251.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moP-ZD-K8Y">
-                                                    <rect key="frame" x="18" y="40" width="111" height="77.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="diwakarkumawat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moP-ZD-K8Y">
+                                                    <rect key="frame" x="18" y="40" width="156" height="77.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="LmJ-eP-WMf"/>
                                                         <constraint firstAttribute="height" constant="21" id="gId-kj-7II"/>
@@ -502,7 +502,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7lb-4F-YGn">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7lb-4F-YGn">
                                                     <rect key="frame" x="224" y="79" width="103" height="93"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="93" id="vLq-OH-d14"/>
@@ -545,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXy-ah-8in" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="-287.40629685157421"/>
+            <point key="canvasLocation" x="1642" y="270"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZNV-qm-oS9">
@@ -617,7 +617,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XrN-l2-F4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1046" y="-321"/>
+            <point key="canvasLocation" x="332" y="271"/>
         </scene>
     </scenes>
     <resources>
