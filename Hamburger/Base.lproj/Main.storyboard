@@ -95,7 +95,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3000.8000000000002" y="-287.40629685157421"/>
+            <point key="canvasLocation" x="2868" y="240"/>
         </scene>
         <!--Blue View Controller-->
         <scene sceneID="fon-T6-t2M">
@@ -492,8 +492,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="251.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="diwakarkumawat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moP-ZD-K8Y">
-                                                    <rect key="frame" x="18" y="40" width="156" height="77.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moP-ZD-K8Y">
+                                                    <rect key="frame" x="18" y="40" width="111" height="77.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="111" id="LmJ-eP-WMf"/>
                                                         <constraint firstAttribute="height" constant="21" id="gId-kj-7II"/>
